@@ -1,40 +1,102 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>طاهیران | Tahiran.ir</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;900&display=swap');
-        
-        :root {
-            --neon: #facc15;
-        }
-        
-        body {
-            font-family: 'Vazirmatn', system-ui, sans-serif;
-            cursor: none;
-        }
-        
-        .cosmic-bg {
-            background: radial-gradient(circle at 50% 30%, #1a0f2e 0%, #000000 65%);
-        }
-        
-        .custom-cursor {
-            position: fixed;
-            width: 28px;
-            height: 28px;
-            border: 2px solid rgba(250, 204, 21, 0.6);
-            border-radius: 50%;
-            pointer-events: none;
-            z-index: 9999;
-            mix-blend-mode: difference;
-            transition: transform 0.1s ease, width 0.3s, height 0.3s;
-            box-shadow: 0 0 25px #facc15;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>طاهیران | Tahiran.ir</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+<style>
+body{
+font-family:'Vazirmatn',sans-serif;
+background: radial-gradient(circle at 50% 30%, #1a0f2e 0%, #000000 65%);
+color:white;
+cursor:none;
+text-align:center;
+}
+
+.logo-img{
+width:180px;
+margin:0 auto 30px auto;
+filter: drop-shadow(0 0 25px #facc15);
+}
+
+.persian-logo{
+font-size:clamp(4rem,12vw,8rem);
+font-weight:900;
+color:#facc15;
+text-shadow:0 0 40px #eab308;
+}
+
+.english-logo{
+font-size:clamp(1.6rem,5vw,3rem);
+letter-spacing:10px;
+color:#facc15;
+margin-top:-15px;
+}
+
+.btn{
+display:block;
+margin:15px auto;
+padding:20px;
+width:90%;
+max-width:400px;
+border-radius:20px;
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(15px);
+border:2px solid rgba(250,204,21,0.4);
+font-size:22px;
+transition:.4s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+border-color:#facc15;
+box-shadow:0 0 40px #facc15;
+}
+</style>
+</head>
+
+<body>
+
+<!-- لوگو -->
+<img src="tahiran logo.png" class="logo-img">
+
+<!-- عنوان -->
+<div class="persian-logo">طاهیران</div>
+<div class="english-logo">TAHIRAN.IR</div>
+
+<br><br>
+
+<!-- دکمه‌ها به ترتیب خواسته شده -->
+
+<a href="https://www.instagram.com/tahiran_co" target="_blank" class="btn">
+<i class="fa-brands fa-instagram"></i>
+اینستاگرام
+</a>
+
+<a href="https://t.me/tahiranpc" target="_blank" class="btn">
+<i class="fa-brands fa-telegram"></i>
+تلگرام
+</a>
+
+<a href="https://rubika.ir/tahiranpc" target="_blank" class="btn">
+<i class="fa-solid fa-comments"></i>
+روبیکا
+</a>
+
+<a href="https://eitaa.com/tahiranpc" target="_blank" class="btn">
+ایتا
+</a>
+
+<br><br>
+<div style="color:#facc15; opacity:.7;">طاهیران • همیشه آنلاین</div>
+
+</body>
+</html>        }
         
         .persian-logo {
             font-size: clamp(4.2rem, 16vw, 9rem);
